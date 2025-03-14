@@ -1,0 +1,76 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  background: #333;
+  height: 300px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer {
+  background: #a9a7a7;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .main {
+    flex-direction: column;
+  }
+}
+.main div {
+  height: 300px;
+  width: 300px;
+  padding: 30px;
+}
+
+@media (max-width: 480px) {
+  .main div {
+    padding: 15px;
+    height: 200px;
+  }
+}
+
+.profile-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.header .section1 {
+  width: 200px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .section1 span {
+  padding: 10px;
+}
+
+.header .section2 {
+  width: 600px;
+  padding: 50px;
+}
+
+@media (max-width: 480px) {
+  .header .section2 {
+    padding: 10px;
+  }
+}
